@@ -1,3 +1,3 @@
 # accommodation
 
-Where to stay for Gianfranco and Elisa magical wedding! 
+Where to stay for Gianfranco and Elisa's magical wedding!
