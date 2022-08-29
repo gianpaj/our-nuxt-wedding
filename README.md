@@ -32,6 +32,9 @@ yarn build
 
 - [ ] Setup project
 - [ ] Add translation library and set it up
+- [ ] RSVP form
+  - [ ] ?unique link & QR code
+  - [ ] Form should have 'One song to dance to'
 - [ ] Add info
   - [ ] save the date
   - [ ] few photos & gifs
@@ -42,6 +45,7 @@ yarn build
   - [ ] maps (static)
   - [ ] add link to wedding gift list
     - [ ] create wedding gift list
+    - [ ] Plaid bank transfer?
 - [ ] Design website
   - [ ] one page or multiple?
   - [ ] find other websites and collect what we like
