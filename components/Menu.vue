@@ -5,9 +5,9 @@
     </li>
     <li>
       <NuxtLink to="/rsvp">{{ t('rsvp') }}</NuxtLink>
-
     </li>
   </ul>
+  <LanguageSwitcher />
 </template>
 
 <style>
@@ -19,5 +19,12 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
-    // import accommodation  from '../content/info'
+// import accommodation  from '../content/info'
+</script>
+<script lang="ts">
+export default {
+  name: 'RSVP',
+  components: {
+  }
+}
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="locale-changer">
+  <div class="locale-switcher">
     <select v-model="$i18n.locale">
       <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang.key">
         {{ lang.name }}
@@ -17,7 +17,7 @@
 
 <script lang="ts">
 export default {
-  name: 'locale-changer',
+  name: 'locale-switcher',
   // methods: {
   //   switchLocalePath(l) {
   //     console.log('locale', l);
