@@ -1,5 +1,7 @@
 {
-    "hi": "Hi",
-    "rsvp": "RSVP",
-    "accommodation": "Accommodation"
+    "rsvp-hi": "Hi",
+    "rsvp-title": "RSVP",
+    "accommodation": "Accommodation",
+    "form-name": "Full name",
+    "form-submit": "Submit"
 }

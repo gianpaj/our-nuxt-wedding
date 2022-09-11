@@ -9,7 +9,7 @@ Deploy your [Nuxt.js](https://nuxtjs.org) project to Vercel with zero configurat
 Install the dependencies:
 
 ```bash
-yarn install
+npm install
 ```
 
 ## Development
@@ -17,7 +17,7 @@ yarn install
 Start the development server on <http://localhost:3000>:
 
 ```bash
-yarn dev
+npm run dev
 ```
 
 ## Deploy Your Own
@@ -25,13 +25,14 @@ yarn dev
 Build the application for production:
 
 ```bash
-yarn build
+npm run build
 ```
 
 ## TODO
 
 - [ ] Setup project
-- [ ] Add translation library and set it up
+- [x] Add translation library and set it up
+- [ ] Fix router
 - [ ] RSVP form
   - [ ] ?unique link & QR code
   - [ ] Form should have 'One song to dance to'

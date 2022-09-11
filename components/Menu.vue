@@ -4,7 +4,7 @@
       <NuxtLink to="/">{{ t('accommodation') }}</NuxtLink>
     </li>
     <li>
-      <NuxtLink to="/rsvp">{{ t('rsvp') }}</NuxtLink>
+      <NuxtLink to="/rsvp">{{ t('rsvp-title') }}</NuxtLink>
     </li>
   </ul>
   <LanguageSwitcher />

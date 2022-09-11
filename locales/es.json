@@ -1,5 +1,7 @@
 {
-    "hi": "Hola",
-    "rsvp": "RSVP?",
-    "accomodation": "Hospitalidad?"
+    "rsvp-hi": "Hola",
+    "rsvp-title": "RSVP?",
+    "accommodation": "Hospitalidad?",
+    "form-name": "Nombre completo",
+    "form-submit": "Envia"
 }
