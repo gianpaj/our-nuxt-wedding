@@ -5,8 +5,10 @@ export default defineNuxtConfig({
   // builder: 'webpack', // default: 'vite'
   modules: [
     //
+    'nuxt-windicss',
     "@nuxt/content",
     "@intlify/nuxt3",
+    '@vueuse/nuxt',
   ],
   // disable generating the shim for *.vue files
   typescript: {
@@ -17,7 +19,13 @@ export default defineNuxtConfig({
     // vueI18n: {
     //   // ...
     // }
-  }
+  },
+  css: [
+    'virtual:windi.css',
+    'virtual:windi-devtools',
+    // your stylesheets which overrides the preflight
+    '@/css/main.css',
+  ],
   // chakra: {
   //   extendTheme: {
   //     colors: {
