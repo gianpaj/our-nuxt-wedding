@@ -2,6 +2,7 @@ import { defineNuxtConfig } from "nuxt";
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+  // builder: 'webpack', // default: 'vite'
   modules: [
     //
     "@nuxt/content",
