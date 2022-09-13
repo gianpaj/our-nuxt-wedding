@@ -18,6 +18,15 @@
 <script lang="ts">
 export default {
   name: 'locale-switcher',
+  created() {
+    if (process.client) {
+      // set default language
+      const navLang = navigator.language
+      if (this.langs.some(lang => lang.key === navLang)) {
+        this.$i18n.locale = navLang
+      }
+    }
+  },
   // methods: {
   //   switchLocalePath(l) {
   //     console.log('locale', l);
