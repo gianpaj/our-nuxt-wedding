@@ -1,7 +1,11 @@
 <template>
   <!-- <CThemeProvider> -->
-  <Menu />
-  <slot />
+  <div class="container my-10 mx-auto py-10 px-20">
+    <Menu />
+    <div class="prose">
+      <slot />
+    </div>
+  </div>
   <!-- <CButton as="nuxt-link" to="/"> -->
   <!-- ⚡️ Oh, my Nuxt! -->
   <!-- </CButton>
@@ -11,16 +15,15 @@
 <style>
 /* <link rel="preload" as="style" href="./default.css" /> */
 
-.d-block {
-  display: block;
+body {
+  @apply bg-green-100;
 }
 
-.d-flex {
-  display: flex;
-}
-
-.d-inline-block {
-  display: block;
+.container {
+  filter: contrast(180%) brightness(100%);
+  background:
+    linear-gradient(67deg, rgba(106, 108, 94, 0.92), rgba(191, 192, 187, 0.79)),
+    url(/img/noise.svg)
 }
 </style>
 

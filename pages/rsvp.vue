@@ -1,8 +1,10 @@
 <template>
-  <h1 class="text-2xl">{{ t('rsvp-title') }}</h1>
-  <p>{{ t('rsvp-hi') }}</p>
-  <p>{{ d(new Date('2023-11-11'), { dateStyle: 'full' }) }}</p>
-  <Form />
+  <div>
+    <h1 class="text-2xl">{{ t('rsvp-title') }}</h1>
+    <p>{{ t('rsvp-hi') }}</p>
+    <p>{{ d(new Date('2023-11-11'), { dateStyle: 'full' }) }}</p>
+    <Form />
+  </div>
 </template>
 
 
@@ -11,6 +13,7 @@ import { useI18n } from 'vue-i18n';
 // import Form from '~~/components/Form.vue';
 
 const { t, d } = useI18n();
+definePageMeta({ layout: 'default' })
 </script>
 
 <script lang="ts">

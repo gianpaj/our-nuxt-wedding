@@ -15,6 +15,12 @@
   </div>
 </template>
 
+<style scoped>
+select {
+  @apply bg-transparent;
+}
+</style>
+
 <script lang="ts">
 export default {
   name: 'locale-switcher',

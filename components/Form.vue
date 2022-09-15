@@ -1,11 +1,13 @@
 <template>
-  <form v-on:onsubmit="submit" class="d-block">
-    <input :placeholder="t('form-name')" name="name" type="text" v-model="name" />
-    <button type="submit">{{ t('form-submit')}}</button>
-  </form>
-  <textarea>
+  <div>
+    <form v-on:onsubmit="submit" class="d-block">
+      <input :placeholder="t('form-name')" name="name" type="text" v-model="name" />
+      <button type="submit">{{ t('form-submit')}}</button>
+    </form>
+    <textarea>
 Name: "{{ name }}"
   </textarea>
+  </div>
 </template>
 
 <script setup lang="ts">

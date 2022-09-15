@@ -1,7 +1,9 @@
 {
-    "rsvp-hi": "Hi",
-    "rsvp-title": "RSVP",
-    "accommodation": "Accommodation",
-    "form-name": "Full name",
-    "form-submit": "Submit"
+  "rsvp-hi": "Hi",
+  "rsvp-title": "RSVP",
+  "accommodation": "Accommodation",
+  "form-name": "Full name",
+  "form-submit": "Submit",
+  "home": "Home",
+  "registry": "Registry"
 }

@@ -30,12 +30,14 @@ npm run build
 
 ## TODO
 
-- [ ] Setup project
+- [x] Setup project
+- [ ] Pick font
 - [x] Add translation library and set it up
-- [ ] Fix router
+- [x] Fix router
 - [ ] RSVP form
   - [ ] ?unique link & QR code
   - [ ] Form should have 'One song to dance to'
+  - [ ] connect to Google Form?
 - [ ] Add info
   - [ ] save the date
   - [ ] few photos & gifs
