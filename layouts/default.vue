@@ -10,7 +10,7 @@
   <!-- ⚡️ Oh, my Nuxt! -->
   <!-- </CButton>
   </CThemeProvider> -->
-</template> 
+</template>
 
 <style>
 /* <link rel="preload" as="style" href="./default.css" /> */
@@ -21,24 +21,27 @@ body {
 
 .container {
   filter: contrast(180%) brightness(100%);
-  background:
-    linear-gradient(67deg, rgba(106, 108, 94, 0.92), rgba(191, 192, 187, 0.79)),
-    url(/img/noise.svg)
+  background: linear-gradient(
+      67deg,
+      rgba(106, 108, 94, 0.92),
+      rgba(191, 192, 187, 0.79)
+    ),
+    url(/img/noise.svg);
 }
 </style>
 
 <script>
 // import { CThemeProvider, CReset, CButton } from '@chakra-ui/vue'
-import Menu from '../components/Menu'
+import Menu from "../components/Menu";
 
 export default {
-  name: 'DefaultLayout',
+  name: "DefaultLayout",
   components: {
-    Menu
-  }
+    Menu,
+  },
   //     CThemeProvider,
   //     CReset,
   //     CButton
   //   }
-}
+};
 </script>

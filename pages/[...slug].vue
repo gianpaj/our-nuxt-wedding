@@ -1,9 +1,7 @@
 <template>
   <main>
-    <ContentDoc />
+    <NuxtLayout>
+      <ContentDoc />
+    </NuxtLayout>
   </main>
 </template>
-
-<script setup>
-definePageMeta({ pageTransition: false })
-</script>

@@ -1,5 +1,10 @@
+/*
+ ** Windi CSS Configuration File
+ **
+ ** Docs: https://next.windicss.org/guide/configuration.html
+ */
 import type { Plugin } from 'windicss/types/interfaces'
-import { defineConfig } from "windicss/helpers";
+import { defineConfig } from 'windicss/helpers'
 import colors from 'windicss/colors'
 import defaultTheme from 'windicss/defaultTheme'
 import typography from 'windicss/plugin/typography'
@@ -21,8 +26,6 @@ export default defineConfig({
       transparent: 'transparent',
       current: 'currentColor',
       black: '#000',
-      white: '#efefed',
-      blue: colors.sky,
       green: {
         100: '#bfc0bb',
         200: '#a9a9a9',
@@ -30,8 +33,15 @@ export default defineConfig({
         400: '#737373',
         500: '#6a6c5e',
       },
+      white: '#fff',
+      blue: colors.sky,
+      orange: colors.orange,
+      purple: colors.purple,
+      red: colors.red,
+      rose: colors.rose,
       yellow: colors.amber,
       gray: colors.stone,
+      pink: colors.pink,
     },
     extend: {
       fontFamily: {

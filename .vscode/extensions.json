@@ -1,7 +1,3 @@
 {
-  "recommendations": [
-    "vue.volar",
-    "ms-azuretools.vscode-docker",
-    "voorjaar.windicss-intellisense"
-  ]
+  "recommendations": ["vue.volar", "voorjaar.windicss-intellisense"]
 }

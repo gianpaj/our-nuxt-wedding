@@ -1,7 +1,11 @@
 <template>
   <div class="locale-switcher">
-    <select v-model="$i18n.locale">
-      <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang.key">
+    <select v-model="locale">
+      <option
+        v-for="(lang, i) in availableLocales"
+        :key="lang.code"
+        :value="lang.key"
+      >
         {{ lang.name }}
       </option>
     </select>
@@ -20,31 +24,51 @@ select {
   @apply bg-transparent;
 }
 </style>
+<script lang="ts" setup>
+import { LocaleObject } from "@nuxtjs/i18n/dist/runtime/composables";
+import { ref, onMounted } from "vue";
+const { locale, locales, setLocale } = useI18n();
 
-<script lang="ts">
-export default {
-  name: 'locale-switcher',
-  created() {
-    if (process.client) {
-      // set default language
-      const navLang = navigator.language
-      if (this.langs.some(lang => lang.key === navLang)) {
-        this.$i18n.locale = navLang
+const availableLocales = computed(() => {
+  return (locales.value as LocaleObject[]).filter(
+    (i) => i.code !== locale.value
+  );
+});
+
+onMounted(() => {
+  if (process.client) {
+    // set default language
+    const navLang = navigator.language;
+    console.log("availableLocales", availableLocales.value);
+    console.log("navLang", navLang);
+    availableLocales.value.forEach((lang) => {
+      if (navLang.startsWith(lang.code)) {
+        console.log("setlocale navLang", navLang);
+        setLocale(navLang);
       }
-    }
-  },
-  // methods: {
-  //   switchLocalePath(l) {
-  //     console.log('locale', l);
-  //   }
-  // },
-  data() {
-    return {
-      langs: [
-        { key: 'es', name: 'Español' },
-        { key: 'en', name: 'English' }
-      ]
-    }
+    });
   }
-}
-</script> 
+});
+// methods: {
+//   switchLocalePath(l) {
+//     console.log('locale', l);
+//   }
+// },
+
+// definePageMeta({
+//   // title: 'pages.title.top',
+//   // middleware: () => {
+//   //   const localePath2 = useLocalePath()
+//   //   console.log('middleware', localePath2({ name: 'blog' }))
+//   // },
+//   pageTransition: {
+//     name: "page",
+//     mode: "out-in",
+//     onBeforeEnter: async () => {
+//       const { finalizePendingLocaleChange } = useNuxtApp().$i18n;
+//       await finalizePendingLocaleChange();
+//       console.log("onBeforeEnter");
+//     },
+//   },
+// });
+</script>
